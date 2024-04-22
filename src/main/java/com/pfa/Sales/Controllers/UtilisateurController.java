@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.pfa.Sales.Repositories.UtilisateurRepository;
 @RestController
-@RequestMapping("/utilisateurs")//ll
+@RequestMapping("/utilisateurs")//llb
 public class UtilisateurController {
     @Autowired
     private UtilisateurService utilisateurService;
