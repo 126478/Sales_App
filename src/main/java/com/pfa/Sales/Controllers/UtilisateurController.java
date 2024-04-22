@@ -13,7 +13,7 @@ public class UtilisateurController {
     private UtilisateurRepository utilisateurRepository;
 
 
-
+//int
     @PutMapping("/{id}")
     public Utilisateur mettreAJourUtilisateur(@PathVariable Long id, @RequestBody Utilisateur utilisateurDetails) {
         Utilisateur utilisateur = utilisateurService.recupererUtilisateurParId(id)
@@ -21,6 +21,6 @@ public class UtilisateurController {
         utilisateur.setNom(utilisateurDetails.getNom());
         utilisateur.setEmail(utilisateurDetails.getEmail());
         utilisateur.setMotDePasse(utilisateurDetails.getMotDePasse());
-        return utilisateurRepository.save(utilisateur); // Utilisation du repository pour sauvegarder l'utilisateur mis à jour
+        return utilisateurRepository.save(utilisateur); //  kkkk  Utilisation du repository pour sauvegarder l'utilisateur mis à jour
     }
 }
